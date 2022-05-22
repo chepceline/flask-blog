@@ -48,7 +48,7 @@ def login():
          return redirect(url_for('home'))
       else:
          flash('Login unsuccessful. Please check username and password', 'danger')   
-   return render_template('login.html', title='Login',form=form)
+   return render_template('login.html', title='Login', form='form')
 
 
 if __name__ == '__main__': 
